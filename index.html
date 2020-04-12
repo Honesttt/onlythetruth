@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.png" type="image/gif" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.logo {
+
+}
+logo:hover {
+    content: url('http://www.furrytalk.com/wp-content/uploads/2010/05/2.jpg');
+
+}
+</style>
+</head>
+<body>
+<script>
+function hover(element) {
+  element.setAttribute('src', 'logo2.png');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'logo.png');
+}
+</script>
+<div class="topnav">
+<a href="index.html"><img src="logo.png" height=45 class="logo" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+  <a href="news.html">News</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Hello. Welcome to the site!</h2>
+  <p>If you pass this point, you'll experience something called free speech.</p>
+</div>
+
+</body>
+</html>
